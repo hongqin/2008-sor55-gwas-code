@@ -1,0 +1,10 @@
+load( "030411.myannotation.bkgrdCorrected.nonChr457Normalized.RData" );
+str(out)
+hist(out$sd.wt)
+hist(out$sd.mut)
+summary(out$sd.wt)
+summary(out$sd.mut)
+summary(out$WtMean2)
+summary(out$MutMean2)
+summary(out$sd.ratio)
+quantile(out$sd.ratio, c(0.5, 0.6, 0.7, 0.75, 0.8))
