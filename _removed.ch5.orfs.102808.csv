@@ -1,0 +1,6 @@
+orf19.3200	MTLA2	5	C	395255	394595	606	Master regulator (activator) of a-type mating; has HMG domain, which is predicted to bind DNA; gene has intron; not related to S. cerevisiae MATa2; a/alpha mating type may increase virulence, provides competitive advantage
+orf19.3201	MTLA1	5	C	394490	393820	597	A1p and Alpha2p act together to repress white-opaque switching and mating (an opaque-specific process); homeodomain protein; gene of the MTLa (Mating Type Like) locus; a/alpha mating type may increase virulence, competitive advantage
+orf19.3197	PAP1	5	W	400512	402179	1668	Poly(A) polymerase, likely involved in mRNA polyadenylation; gene is located within the MTLa mating-type-like locus
+orf19.3199	PIKA	5	C	398240	395370	2871	Putative phosphatidylinositol kinase; gene is located within the MTLa mating-type-like locus
+orf19.3198	OBPA	5	C	400106	398805	1302	Similar to oxysterol binding protein; gene is located within the MTLa mating-type-like locus; Plc1p-regulated
+orf19.3982	orf19.3982	5	W	1078956	1080704	1749	Maltase; induced during growth on sucrose; transcription is induced in response to alpha pheromone in SpiderM medium

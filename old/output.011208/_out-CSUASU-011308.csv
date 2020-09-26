@@ -1,0 +1,7 @@
+orf	chr	gene	geneflag	WtMean	MutMean	fold.mut.by.wt	p	p.paired								
+"orf19.1105.2"	"Chr5"	"CSU51"	1	25618.49	21574.76	0.84	0.86	0.58
+"orf19.NACSU52"	"Chr5"	"CSU52"	1	592.88	169.83	0.29	0.11	0.11
+"orf19.NACSU55"	"Chr5"	"CSU55"	1	615.2	159.96	0.26	0.46	0.46
+"orf19.NAASU51"	"Chr5"	"ASU51"	1	2064.54	689.96	0.33	0.37	0.3
+"orf19.3931ASU53"	"Chr5"	"ASU53"	1	638.46	387.22	0.61	0.2	0.06
+"orf19.3931"	"Chr5"	"SFC1"	1	1080.6	818.8	0.76	0.47	0.28

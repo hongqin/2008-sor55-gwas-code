@@ -1,0 +1,4 @@
+
+=>Bulgac ask to use 100 as the cutoff in fig1,2, and tabl1. It is a
+reasonalbe request and for the best of the paper. 
+

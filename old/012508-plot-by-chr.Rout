@@ -1,0 +1,64 @@
+
+R version 2.5.1 (2007-06-27)
+Copyright (C) 2007 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> ### Jan 24, 2008
+> ### plot expression ratio along chromosomes
+> rm(list=ls())
+> 
+>  MyBox <- function( x0,y0,h,w,col) {
++    xin = c( x0, x0,   x0+w, x0+w );
++    yin = c( y0, y0+h, y0+h, y0   );
++    polygon(xin,yin, col=col, border=NA);
++  }
+> 
+> #  Exactly form of mulinomial sampling 
+> # vector of x and p
+> loglh.multinomial.sampling <- function( x, p ) {
++   total = sum( x );
++   if ( length(x) == length(p) ) { 
++         y = p ^ x;
++         ret <- lfactorial(total) - sum( lfactorial(x) ) + sum(log(y) );
++   } else {
++         ret <- NA;
++   }
++ }
+> 
+> ################################
+> 
+> #source ("source/011208-Sor55.b.R");
+> # or 
+>  load ("011208corrected.RData");
+> 
+> #labels = c( "orf", "chr", "gene", "geneflag", "WtMean","MutMean", "fold.mut.by.wt", "p");
+> #out = data.frame( matrix(nrow=length( union(orfs, orfs2) ), ncol=length(labels) ) );
+> 
+> ## the expression results
+> 
+> cen.orfs = c('CEN1','CEN2','CEN3','CEN4','CEN5','CEN6','CEN7','CENR');
+> chrs     = c('Chr1','Chr2','Chr3','Chr4','Chr5','Chr6','Chr7', 'ChrR');
+> locs	 = c( '1', '2','3','4','5','6','7', 'R');
+> tb = read.delim("cal21-annotation.csv");
+> tb$chr = as.character( tb$chr );
+> 
+> mat = matrix( seq(1,length(chrs)), nrow=length( chrs), ncol= 2 ); 
+> layout = (mat, respect=T);
+Error: syntax error, unexpected ',', expecting ')' in "layout = (mat,"
+Execution halted
